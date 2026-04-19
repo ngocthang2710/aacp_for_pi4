@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Permissions required by AACP SDK.
+        Consumer app phải declare những permission này trong manifest của họ.
+        SDK manifest chỉ declare để Gradle merge tool biết.
+    -->
+
+    <!-- USB Host — để scan và communicate với iPhone -->
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <!-- Microphone — cho Siri qua CarPlay -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Bluetooth — cho CarPlay wireless (optional) -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"
+        android:minSdkVersion="31" />
+
+    <!-- Foreground service — để giữ USB connection khi app ở background -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+
+    <application>
+        <!-- USB accessory intent filter — tự động launch khi iPhone cắm vào -->
+        <!-- Consumer app nên copy intent-filter này vào Activity của họ -->
+    </application>
+
+</manifest>

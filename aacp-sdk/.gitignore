@@ -1,0 +1,29 @@
+# Build artifacts
+build*/
+outputs/
+.gradle/
+.cxx/
+
+# Android
+*.apk
+*.aab
+*.aar
+local.properties
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
