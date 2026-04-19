@@ -6,9 +6,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#000000"
+    tools:context=".CarPlayActivity">
 
     <!-- CarPlay video surface — toàn màn hình -->
     <SurfaceView
@@ -25,29 +27,29 @@
         android:id="@+id/status_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#80000000"
+        android:fontFamily="monospace"
+        android:padding="8dp"
         android:text="Initializing..."
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        android:padding="8dp"
-        android:background="#80000000"
-        android:fontFamily="monospace"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="8dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Stats — góc trên phải -->
     <TextView
         android:id="@+id/stats_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#80000000"
+        android:fontFamily="monospace"
+        android:padding="6dp"
         android:text=""
         android:textColor="#AAFFFFFF"
         android:textSize="11sp"
-        android:padding="6dp"
-        android:background="#80000000"
-        android:fontFamily="monospace"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="8dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
