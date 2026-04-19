@@ -11,6 +11,7 @@
 #include <unordered_map>
 #include <mutex>
 #include <string>
+#include <atomic>
 
 namespace aacp {
 

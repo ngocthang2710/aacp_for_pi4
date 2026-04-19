@@ -4,12 +4,13 @@
 // Layer thấp nhất: giao tiếp trực tiếp với iPhone qua USB AOA 2.0
 // Dùng libusb-1.0 — không phụ thuộc Android USB API để dễ test trên Linux
 // ─────────────────────────────────────────────────────────────────────────────
-#include <libusb-1.0/libusb.h>
+#include <libusb.h>
 #include <functional>
 #include <thread>
 #include <atomic>
 #include <vector>
 #include <string>
+#include <mutex>
 #include <cstdint>
 
 namespace aacp {

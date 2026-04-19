@@ -2,10 +2,10 @@
 // AacpSdk.cpp
 // C API entry point — bọc C++ objects thành opaque handle
 // ─────────────────────────────────────────────────────────────────────────────
-#include "../../include/aacp/AacpSdk.h"
-#include "../transport/UsbTransport.h"
-#include "../protocol/AacpProtocol.h"
-#include "../session/SessionManager.h"
+#include "../include/aacp/AacpSdk.h"
+#include "transport/UsbTransport.h"
+#include "protocol/AacpProtocol.h"
+#include "session/SessionManager.h"
 
 #include <memory>
 #include <mutex>

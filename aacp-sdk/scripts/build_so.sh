@@ -52,7 +52,7 @@ cmake -B "$BUILD_DIR" \
     -DANDROID=TRUE \
     -DAACP_BUILD_TESTS=OFF \
     -S "$PROJECT_ROOT/sdk-core" \
-    -G Ninja 2>&1 | grep -v "^--"
+    -G Ninja
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 info "Building..."
